@@ -1,0 +1,97 @@
+<body>
+	<form>
+		<h1>FORMAT DI REGISTRAZIONE</h1>
+		<section>
+			<div>
+				<label for="mail">
+					<span>Email:</span>
+				</label>
+				<input type="email" id="mail" name="mail" />
+			</div>
+			<div>
+				<label for="keyword">
+					<span>Password:</span>
+				</label>
+				<input type="password" id="keyword" name="password" />
+			</div>
+			<div>
+				<label for="namesurname">
+					<span>Nome e Cognome:</span>
+				</label>
+				<input type="text" id="namesurname" name="namesurname" />
+			</div>
+			<div>
+				<label for="date">
+					<span>Data di nascita:</span>
+				</label>
+				<input type="date" id="date" name="date" max="2021-12-31" />
+			</div>
+			<div>
+				<label for="phone">
+					<span>Numero di telefono:</span>
+				</label>
+				<input type="tel" id="phone" name="phone" />
+			</div>
+			<div>
+				<label for="plan">
+					<span>Piano di abbonamento:</span>
+				</label>
+				<select id="plan" name="plan">
+					<optgroup label="Piano Gratuito">
+						<option value="Free">Piano Base</option>
+					</optgroup>
+					<optgroup label="Piani Premium">
+						<option value="bronze">Piano Bronze 0.99€</option>
+						<option value="silver">Piano Silver 2.99€</option>
+						<option value="gold">Piano Gold 4.99€</option>
+					</optgroup>
+				</select>
+			</div>
+			<div>
+				<label for="proplan">
+					<span>Attiva i vantaggi pro! A solo 5€ in più al mese</span>
+					<input type="checkbox" id="proplan" name="proplan" value="proplan" />
+				</label>
+			</div>
+			<div>
+				<label for="cardnumber">
+					<span>Numero carta di credito:</span>
+					<input
+						type="tel"
+						id="cardnumber"
+						name="cardnumber"
+						pattern="[0-9\s]{19}"
+						maxlength="19"
+						placeholder="XXXX XXXX XXXX XXXX"
+					/>
+				</label>
+			</div>
+			<div>
+				<label for="cvc">
+					<span>Codice CVC:</span>
+					<input
+						type="tel"
+						id="cvc"
+						name="cvc"
+						pattern="[0-9]{3}"
+						maxlength="3"
+						placeholder="XXX"
+					/>
+				</label>
+			</div>
+			<div>
+				<label for="expiring">
+					<span>Scadenza Carta di Credito</span>
+				</label>
+				<input
+					type="month"
+					id="expiring"
+					name="expiring "
+					min="2022-01"
+					max="2099-12"
+					value="2022-01"
+				/>
+			</div>
+		</section>
+	</form>
+</body>
